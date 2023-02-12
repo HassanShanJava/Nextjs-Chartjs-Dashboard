@@ -1,4 +1,4 @@
-import Sidebar from "@/components/Sidebar";
+import Sidebar from "@/components/Sidebar"; //sidebar made
 import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }) {

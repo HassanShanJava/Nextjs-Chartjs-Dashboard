@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import React from 'react'
 
 import {RxSketchLogo, RxDashboard, RxPerson} from "react-icons/rx"
@@ -10,6 +9,7 @@ import {FiSettings} from "react-icons/fi"
 const Sidebar = ({children}) => {
   return (
     <div className='flex'>
+        {/* fixed side */}
         <div className='fixed w-20 h-screen p-4 bg-white border-white border-r-[1px] flex flex-col justify-between'>
             {/* we will have the sidebar here  */}
             <div className='flex flex-col items-center'>
@@ -41,6 +41,8 @@ const Sidebar = ({children}) => {
                 </Link>
             </div>
         </div>
+
+
         {/* passing children props here */}
         <main className='ml-20 w-full'>{children}</main>
     </div>
