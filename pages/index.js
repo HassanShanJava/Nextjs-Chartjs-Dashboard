@@ -1,4 +1,6 @@
+import BarChart from "@/components/BarChart";
 import Header from "@/components/Header";
+import RecentOrders from "@/components/RecentOrders";
 import TopCards from "@/components/TopCards";
 
 
@@ -17,6 +19,13 @@ export default function Home() {
         {/* <h1 className="text-3xl font-bold underline">Hello world!</h1> */}
         <Header/>
         <TopCards/>
+        
+        {/* to have the bar chart and recent order inline */}
+        <div className="p-4 grid md:grid-cols-3 grid-cols-1 gap-4 ">
+          <BarChart/>
+          <RecentOrders/>
+        </div>
+      
       </main>
     </>
   );
