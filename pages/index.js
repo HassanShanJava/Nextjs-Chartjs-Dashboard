@@ -16,6 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-gray-100 min-h-screen ">
+        
         {/* <h1 className="text-3xl font-bold underline">Hello world!</h1> */}
         <Header/>
         <TopCards/>
