@@ -1,6 +1,7 @@
-// import Header from "@/components/Header";
 import Header from "@/components/Header";
 import TopCards from "@/components/TopCards";
+
+
 import Head from "next/head";
 
 export default function Home() {
