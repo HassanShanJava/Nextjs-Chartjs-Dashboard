@@ -4,7 +4,7 @@ import {FaShoppingBag} from "react-icons/fa"
 
 const RecentOrders = () => {
   return (
-    <div>RecentOrders</div>
+    <div></div>
   )
 }
 
