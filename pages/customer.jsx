@@ -24,7 +24,14 @@ const customer = () => {
               <li
                 key={id}
                 className="bg-gray-50 hover:bg-gray-100 rounded-lg my-3 p-2 grid md:grid-col-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer"
-              ></li>
+              >
+                <div className="flex items-center ">
+                  {/* div is the icon container */}
+                  <div className="bg-purple-100 p-3 rounded-lg">
+                    <BsPersonFill className="text-purple-800 " />
+                  </div>
+                </div>
+              </li>
             ))}
           </ul>
         </div>
