@@ -30,6 +30,13 @@ const customer = () => {
                   <div className="bg-purple-100 p-3 rounded-lg">
                     <BsPersonFill className="text-purple-800 " />
                   </div>
+                  <p className="pl-4">{`${order.name.first} ${order.name.last}`}</p>
+                </div>
+                <p className="text-gray-600 sm:text-left text-right ">{(order.name.first).toLowerCase()}@gmail.com</p>
+                <p className="hidden md:flex">{order.date}</p>
+                <div className="hidden sm:flex justify-between items-center">
+                  <p>{order.method}</p>
+                  <BsThreeDotsVertical/>
                 </div>
               </li>
             ))}
