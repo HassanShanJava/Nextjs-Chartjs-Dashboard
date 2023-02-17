@@ -23,7 +23,7 @@ const customer = () => {
             {data.map((order, id) => (
               <li
                 key={id}
-                className="bg-gray-50 hover:bg-gray-100 rounded-lg my-3 p-2 grid md:grid-col-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer"
+                className="bg-gray-50 hover:bg-gray-100 rounded-lg my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer"
               >
                 <div className="flex items-center ">
                   {/* div is the icon container */}
@@ -32,11 +32,13 @@ const customer = () => {
                   </div>
                   <p className="pl-4">{`${order.name.first} ${order.name.last}`}</p>
                 </div>
-                <p className="text-gray-600 sm:text-left text-right ">{(order.name.first).toLowerCase()}@gmail.com</p>
+                <p className="text-gray-600 sm:text-left text-right ">
+                  {order.name.first.toLowerCase()}@gmail.com
+                </p>
                 <p className="hidden md:flex">{order.date}</p>
-                <div className="hidden sm:flex justify-between items-center">
+                <div className="sm:flex hidden  justify-between items-center">
                   <p>{order.method}</p>
-                  <BsThreeDotsVertical/>
+                  <BsThreeDotsVertical />
                 </div>
               </li>
             ))}
