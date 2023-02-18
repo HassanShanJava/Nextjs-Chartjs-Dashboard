@@ -51,7 +51,10 @@ const orders = () => {
                   </span>
                 </p>
                 <p className="hidden md:flex">{order.date}</p>
-                <p className="hidden sm:flex">{order.method}</p>
+                <div className="sm:flex hidden  justify-between items-center">
+                  <p className="hidden sm:flex">{order.method}</p>
+                  <BsThreeDotsVertical />
+                </div>
               </li>
             ))}
           </ul>
