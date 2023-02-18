@@ -5,6 +5,9 @@ import {RxSketchLogo, RxDashboard, RxPerson} from "react-icons/rx"
 import {HiOutlineShoppingBag} from "react-icons/hi"
 import {FiSettings} from "react-icons/fi"
 
+import HS from "../public/profile-pic.jpeg"
+import Image from 'next/image'
+
 
 const Sidebar = ({children}) => {
   return (
@@ -39,6 +42,10 @@ const Sidebar = ({children}) => {
                         <FiSettings size={20}/>
                     </div>
                 </Link>
+            </div>
+
+            <div>
+                <Image src={HS} alt="Proile Pic" />
             </div>
         </div>
 
