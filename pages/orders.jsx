@@ -50,6 +50,8 @@ const orders = () => {
                     {order.status}
                   </span>
                 </p>
+                <p className="hidden md:flex">{order.date}</p>
+                <p className="hidden sm:flex">{order.method}</p>
               </li>
             ))}
           </ul>
